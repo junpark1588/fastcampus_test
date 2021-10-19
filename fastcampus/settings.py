@@ -28,7 +28,7 @@ DEBUG = True
 #instance and ELB's public IPv4 DNS. if you have more instance, add the line.
 ALLOWED_HOSTS = ['ec2-3-34-3-227.ap-northeast-2.compute.amazonaws.com',
                  'ELB1019-1331593933.ap-northeast-2.elb.amazonaws.com',
-                 'ec2-13-125-241-177.ap-northeast-2.compute.amazonaws.com'
+                 'ec2-13-125-241-177.ap-northeast-2.compute.amazonaws.com',
                  'ec2-3-35-26-191.ap-northeast-2.compute.amazonaws.com']
 
 
