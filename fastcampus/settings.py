@@ -28,6 +28,9 @@ DEBUG = True
 #instance and ELB's public IPv4 DNS. if you have more instance, add the line.
 ALLOWED_HOSTS = ['fast-devops.com',
                  'www.fast-devops.com',
+                 '172.31.34.212',
+                 '172.31.33.142',
+                 '172.31.41.205',
                  'ec2-13-125-81-120.ap-northeast-2.compute.amazonaws.com',
                  'elb1022-419158896.ap-northeast-2.elb.amazonaws.com',
                  'ec2-15-165-159-144.ap-northeast-2.compute.amazonaws.com',
