@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-uyvau6v(ol#+5fr)$c0vt906s2g_$#lf!w362&@_#74soriiof
 DEBUG = True
 
 #instance and ELB's public IPv4 DNS. if you have more instance, add the line.
-ALLOWED_HOSTS = ['ec2-13-125-81-120.ap-northeast-2.compute.amazonaws.com',
+ALLOWED_HOSTS = ['fast-devops.com',
+                 'www.fast-devops.com',
+                 'ec2-13-125-81-120.ap-northeast-2.compute.amazonaws.com',
                  'elb1022-419158896.ap-northeast-2.elb.amazonaws.com',
                  'ec2-15-165-159-144.ap-northeast-2.compute.amazonaws.com',
                  'ec2-15-164-95-46.ap-northeast-2.compute.amazonaws.com']
