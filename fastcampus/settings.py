@@ -26,15 +26,16 @@ SECRET_KEY = 'django-insecure-uyvau6v(ol#+5fr)$c0vt906s2g_$#lf!w362&@_#74soriiof
 DEBUG = True
 
 #instance and ELB's public IPv4 DNS. if you have more instance, add the line.
-ALLOWED_HOSTS = ['fast-devops.click',
-                 'www.fast-devops.click',
-                 '172.31.34.212',
-                 '172.31.33.142',
-                 '172.31.41.205',
-                 'ec2-13-125-81-120.ap-northeast-2.compute.amazonaws.com',
-                 'elb1022-419158896.ap-northeast-2.elb.amazonaws.com',
-                 'ec2-15-165-159-144.ap-northeast-2.compute.amazonaws.com',
-                 'ec2-15-164-95-46.ap-northeast-2.compute.amazonaws.com']
+ALLOWED_HOSTS = [#'fast-devops.click',
+                 #'www.fast-devops.click',
+                 #'172.31.34.212',
+                 #'172.31.33.142',
+                 #'172.31.41.205',
+                 #'ec2-13-125-81-120.ap-northeast-2.compute.amazonaws.com',
+                 #'elb1022-419158896.ap-northeast-2.elb.amazonaws.com',
+                 #'ec2-15-165-159-144.ap-northeast-2.compute.amazonaws.com',
+                 #'ec2-15-164-95-46.ap-northeast-2.compute.amazonaws.com',
+                 '*']
 
 
 # Application definition
@@ -49,6 +50,7 @@ INSTALLED_APPS = [
     'order',
     'boss',
     'delivery',
+    'user',
     'rest_framework'
 ]
 
@@ -93,15 +95,17 @@ WSGI_APPLICATION = 'fastcampus.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'project1',
-        'USER': 'admin',
-        'PASSWORD': '12345678',
-        'HOST':'database-1.ctpzep3fvi9t.ap-northeast-2.rds.amazonaws.com',
-        'PORT':'3306',
-        'OPTIONS':{
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-        }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        #'ENGINE': 'django.db.backends.mysql',
+        #'NAME': 'project1',
+        #'USER': 'admin',
+        #'PASSWORD': '12345678',
+        #'HOST':'database-1.ctpzep3fvi9t.ap-northeast-2.rds.amazonaws.com',
+        #'PORT':'3306',
+        #'OPTIONS':{
+            #'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        #}
     }
 }
 
